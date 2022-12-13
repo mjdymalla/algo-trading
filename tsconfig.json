@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2021",
+      "composite": false,
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "inlineSources": false,
+      "isolatedModules": false,
+      "moduleResolution": "node",
+      "noEmitOnError": true,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "preserveWatchOutput": true,
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "pretty": true,
+      "resolveJsonModule": true,
+      "experimentalDecorators": true,
+      "outDir": "./build"
+    },
+    "include": ["src"],
+    "exclude": ["build/**"]
+
+  }
+  
