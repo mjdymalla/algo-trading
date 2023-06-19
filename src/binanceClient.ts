@@ -40,6 +40,12 @@ export class BinanceClient {
         return this.makeSignedRequest(`${this.baseUrl}/v1/order`, { method: 'POST', searchParams })
     }
 
+    /** Create a limit order */
+    public async limitOrder(symbol: string, side: string, quantity: number, price: string, timeInForce: string) {
+        const searchParams = { symbol, side, quantity, price, timeInForce, type: 'LIMIT' }
+        return this.makeSignedRequest(`${this.baseUrl}/v1/order`, { method: 'POST', searchParams })
+    }
+
     /** Get account balance for all assets */
     public async getAccountBalance(window: number, timestamp: string) {
         const searchParams = { window: window, timestamp: timestamp }
@@ -80,7 +86,7 @@ export class BinanceClient {
 
     /** Handle response from http request */
     public responseHandler(response: any): Result<any, any> {
-        const { statusCode, body } = response
+        const { statusCode, body, error } = response
 
         switch (statusCode) {
             case 200:

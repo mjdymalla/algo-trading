@@ -1,11 +1,9 @@
 #!/bin/sh
 
-URL=git@github.com:MJDymalla/algo-trading.git
-
-REPO=trading-bot
-
-git pull
+echo "Building image.."
 
 docker build -t trading-bot .
+
+echo "Running container.."
 
 docker run --env-file .env -it --rm trading-bot

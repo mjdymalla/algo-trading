@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
+    "back-test": "ts-node back-testing/retracement-test.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MJD",
@@ -13,6 +14,7 @@
   "dependencies": {
     "@swan-io/boxed": "^0.12.0",
     "binance-api-node": "^0.12.1",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.0.3",
     "got": "11.8.5",
     "pino": "^8.7.0",
