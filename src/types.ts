@@ -17,3 +17,10 @@ export interface MeanReversionOptions {
     tradeWindow: number,
     logger: Logger
 }
+
+export interface Candle {
+    open: string
+    close: string
+    high: string
+    low: string
+}

@@ -31,9 +31,7 @@ const movingAverage = (prices: number[], period: number): number[] => {
     for (let i = period - 1; i < prices.length; i++) {
         let sum = 0
 
-        for (let j = i - period + 1; j <= i; j++) {
-            sum += prices[j]
-        }
+        for (let j = i - period + 1; j <= i; j++) sum += prices[j]
 
         movingAverage.push(sum / period)
     }

@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node build/index.js",
+    "start": "tsc && node build/index.js",
     "back-test": "ts-node back-testing/retracement-test.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

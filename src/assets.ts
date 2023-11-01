@@ -2,32 +2,32 @@ import { AssetConfig } from './types'
 
 /** Asset configuration */
 export const ASSETS: AssetConfig = {
-    'BTCUSDT': {
-        pair: 'BTCUSDT',
+    'BTC-USDT': {
+        pair: 'BTC-USDT',
         base: 'BTC',
         quote: 'USDT',
         tradeAmount: 0.1
     },
-    'ETHUSDT': {
-        pair: 'ETHUSDT',
+    'ETH-USDT': {
+        pair: 'ETH-USDT',
         base: 'ETH',
         quote: 'USDT',
         tradeAmount: 0.4
     },
-    'XRPUSDT': {
-        pair: 'XRPUSDT',
+    'XRP-USDT': {
+        pair: 'XRP-USDT',
         base: 'XRP',
         quote: 'USDT',
         tradeAmount: 100
     },
-    'ADAUSDT': {
-        pair: 'ADAUSDT',
+    'ADA-USDT': {
+        pair: 'ADA-USDT',
         base: 'ADA',
         quote: 'USDT',
         tradeAmount: 100
     },
-    'BNBUSDT': {
-        pair: 'BNBUSDT',
+    'BNB-USDT': {
+        pair: 'BNB-USDT',
         base: 'BNB',
         quote: 'USDT',
         tradeAmount: 1
